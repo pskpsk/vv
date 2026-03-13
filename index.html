@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday Vashista 🎉</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Optional Google Fonts (recommended) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ================= BACKGROUND ================= -->
+ <div class="bg1"></div>
+  <div class="bg-overlay"></div>
+
+  <!-- ================= PRELOADER ================= -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="spinner"></div>
+      <div id="preloader-countdown">00 : 00 : 00 : 00</div>
+      <div id="preloader-subtext">Loading...</div>
+      <button id="allowLocationBtn" class="send-btn" style="margin-top:14px;">
+  Click Here to Start...
+</button>
+    </div>
+  </div>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main id="mainContent" class="hidden">
+    <div class="container">
+      <section class="header">
+
+        <!-- Title -->
+        <div class="intro-line">Wish You a</div>
+        <div class="lordeffect">HAPPY BIRTHDAY</div>
+
+        <!-- Name -->
+        <div class="names-row">
+          <h1 class="handwriting-names name-entrance">Vashista</h1>
+        </div>
+
+        <!-- Message -->
+        <div class="message-line">
+          May your life be filled with curiosity, courage, kindness, and dreams that grow stronger every day.
+          Keep smiling, keep learning, and keep shining bright. 🌟
+        </div>
+
+        <!-- ================= PHOTO ALBUM ================= -->
+        <div class="album">
+  <div class="album-hero">
+    <img class="album-photo active" src="01.jpg">
+    <img class="album-photo" src="02.jpg">
+    <img class="album-photo" src="03.jpg">
+    <img class="album-photo" src="04.jpg">
+    <img class="album-photo" src="05.jpg">
+   <img class="album-photo" src="06.jpg">
+    <img class="album-photo" src="07.jpg">
+   <img class="album-photo" src="08.jpg">
+    <img class="album-photo" src="09.jpg">
+   <img class="album-photo" src="10.jpg">
+    <img class="album-photo" src="11.jpg">
+   <img class="album-photo" src="12.jpg">
+    <img class="album-photo" src="13.jpg">
+    <img class="album-photo" src="14.jpg">
+    <img class="album-photo" src="15.jpg">
+    <img class="album-photo" src="16.jpg">
+   <img class="album-photo" src="17.jpg">
+    <img class="album-photo" src="18.jpg">
+   <img class="album-photo" src="19.jpg">
+    <img class="album-photo" src="20.jpg">
+   <img class="album-photo" src="21.jpg">
+    <img class="album-photo" src="22.jpg">
+   <img class="album-photo" src="23.jpg">
+    <img class="album-photo" src="24.jpg">
+    <img class="album-photo" src="25.jpg">
+    <img class="album-photo" src="26.jpg">
+   <img class="album-photo" src="27.jpg">
+    <img class="album-photo" src="28.jpg">
+   <img class="album-photo" src="29.jpg">
+    <img class="album-photo" src="30.jpg">
+
+   
+    <!-- keep rest -->
+  </div>
+
+  <div class="album-strip">
+    <img src="01.jpg" class="thumb active">
+    <img src="02.jpg" class="thumb">
+    <img src="03.jpg" class="thumb">
+     <img src="04.jpg" class="thumb">
+    <img src="05.jpg" class="thumb">
+     <img src="06.jpg" class="thumb">
+    <img src="07.jpg" class="thumb">
+     <img src="08.jpg" class="thumb">
+    <img src="09.jpg" class="thumb">
+     <img src="10.jpg" class="thumb">
+    <img src="11.jpg" class="thumb">
+     <img src="12.jpg" class="thumb">
+     <img src="13.jpg" class="thumb">
+    <img src="14.jpg" class="thumb">
+     <img src="15.jpg" class="thumb">
+    <img src="16.jpg" class="thumb">
+     <img src="17.jpg" class="thumb">
+    <img src="18.jpg" class="thumb">
+     <img src="19.jpg" class="thumb">
+    <img src="20.jpg" class="thumb">
+     <img src="21.jpg" class="thumb">
+    <img src="22.jpg" class="thumb">
+     <img src="23.jpg" class="thumb">
+      <img src="24.jpg" class="thumb">
+     <img src="25.jpg" class="thumb">
+    <img src="26.jpg" class="thumb">
+     <img src="27.jpg" class="thumb">
+    <img src="28.jpg" class="thumb">
+     <img src="29.jpg" class="thumb">
+    <img src="30.jpg" class="thumb">
+    <!-- same order -->
+  </div>
+</div>
+
+        <!-- Footer -->
+        <div class="footer-dancers">
+          <div style="flex:1;text-align:center;padding:12px 18px;">
+            Wishing you a joyful and memorable birthday, Vashista 🎂✨
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- ================= VISUAL LAYERS ================= -->
+  <div id="balloons"></div>
+  <div id="floating-hearts"></div>
+  <canvas id="bokehCanvas"></canvas>
+  <canvas id="sparkleCanvas"></canvas>
+
+  <!-- ================= AUDIO ================= -->
+  <audio id="myAudio" loop preload="auto">
+    <source src="happy.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- ================= FLOATING BUTTONS ================= -->
+  <button id="openWishes" class="floating-wish-btn" aria-label="Open wishes">💌</button>
+  <button id="audioToggle" class="floating-button" aria-label="Toggle audio">🔇</button>
+
+  <!-- ================= WISHES POPUP ================= -->
+  <div id="wishesPopup" class="popup">
+    <div class="popup-content">
+      <button class="close-btn" id="closePopup">&times;</button>
+
+      <h2>Send your wishes</h2>
+
+      <form id="wishesForm">
+
+        <input id="wisherName" placeholder="Your Name" required>
+<textarea id="wisherMessage" placeholder="Your Message" required></textarea>
+        <div class="form-row">
+          <button type="submit" class="send-btn">Send</button>
+          <button type="button" class="close-btn" id="closePopup2"></button>
+        </div>
+      </form>
+
+      <p id="thanksMessage" style="display:none;color:green;font-size:16px;margin-top:10px;">
+        Thank you for your wishes! 🎉
+      </p>
+    </div>
+  </div>
+
+  <!-- ================= SCRIPT ================= -->
+  <script src="script.js"></script>
+
+</body>
+</html>
