@@ -126,7 +126,7 @@
 
         const birthdayMonth = 2; // March (0-based index)
 
-        const birthdayDate = 13;
+        const birthdayDate = 14;
 
         const birthdayHour = 9; // 9 AM
 
